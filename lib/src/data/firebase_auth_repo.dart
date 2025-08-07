@@ -36,4 +36,13 @@ class FirebaseAuthRepo {
   Future<void> logout() async {
     await _firebaseAuth.signOut();
   }
+
+  Future<String?> getUserData() async {
+    try {
+      await _firebaseAuth.currentUser?.displayName;
+    } catch (e) {
+      print(e);
+      rethrow;
+    }
+  }
 }

@@ -1,9 +1,16 @@
 PODS:
+  - cloud_firestore (6.0.0):
+    - Firebase/Firestore (= 12.0.0)
+    - firebase_core
+    - Flutter
   - Firebase/Auth (12.0.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 12.0.0)
   - Firebase/CoreOnly (12.0.0):
     - FirebaseCore (~> 12.0.0)
+  - Firebase/Firestore (12.0.0):
+    - Firebase/CoreOnly
+    - FirebaseFirestore (~> 12.0.0)
   - firebase_auth (6.0.0):
     - Firebase/Auth (= 12.0.0)
     - firebase_core
@@ -84,6 +91,7 @@ PODS:
   - RecaptchaInterop (101.0.0)
 
 DEPENDENCIES:
+  - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - FirebaseFirestore (from `https://github.com/invertase/firestore-ios-sdk-frameworks.git`, tag `12.0.0`)
@@ -112,6 +120,8 @@ SPEC REPOS:
     - RecaptchaInterop
 
 EXTERNAL SOURCES:
+  cloud_firestore:
+    :path: ".symlinks/plugins/cloud_firestore/ios"
   firebase_auth:
     :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_core:
@@ -128,6 +138,7 @@ CHECKOUT OPTIONS:
     :tag: 12.0.0
 
 SPEC CHECKSUMS:
+  cloud_firestore: a824d9a55c9dffddf8de7c1e8fbcd66ca13f1624
   Firebase: 800d487043c0557d9faed71477a38d9aafb08a41
   firebase_auth: 5a5603bbe7fc673f88b7c652bf9c41d6c742b545
   firebase_core: 633e1851ffe1b9ab875f6467a4f574c79cef02e4
